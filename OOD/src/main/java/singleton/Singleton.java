@@ -1,3 +1,5 @@
+package singleton;
+
 /**
  * Double Check
  * @author Yanan Lyu
