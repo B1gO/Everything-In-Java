@@ -1,8 +1,8 @@
-package factory;
+package factory.simplefactory.notification;
 
 /**
  * @author Yanan Lyu
- * @create 2021-12-23-1:47 AM
+ * @date 2021-12-23-1:47 AM
  */
 public class PushNotification implements Notification {
     @Override

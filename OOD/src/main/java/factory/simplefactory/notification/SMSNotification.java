@@ -1,8 +1,8 @@
-package factory;
+package factory.simplefactory.notification;
 
 /**
  * @author Yanan Lyu
- * @create 2021-12-23-1:44 AM
+ * @date 2021-12-23-1:44 AM
  */
 public class SMSNotification implements Notification {
     @Override
