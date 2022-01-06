@@ -1,17 +1,14 @@
-package proxy.jdk_proxy;
+package proxy.cglib_proxy;
 
 /**
  * @author ylyu
  * @version 1.0
- * @date 1/5/22 11:17 PM
+ * @date 1/6/22 10:40 AM
  */
 public class Client {
     public static void main(String[] args) {
         ProxyFactory factory = new ProxyFactory();
-        SellTickets proxyObject = factory.getProxyObject();
+        TrainStation proxyObject = factory.getProxyObject();
         proxyObject.sell();
-
-//        System.out.println(proxyObject.getClass());
-//        while(true){}
     }
 }
