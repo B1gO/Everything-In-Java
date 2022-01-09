@@ -2,8 +2,8 @@ package factory.withoutfactory;
 
 /**
  * @author ylyu
- * @date 1/2/22 9:03 AM
  * @version 1.0
+ * @date 1/2/22 9:03 AM
  */
 public abstract class Coffee {
     public abstract String getName();

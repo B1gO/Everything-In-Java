@@ -2,8 +2,8 @@ package factory.simplefactory.staticfactory;
 
 /**
  * @author ylyu
- * @date 1/2/22 9:21 AM
  * @version 1.0
+ * @date 1/2/22 9:21 AM
  */
 public class SimpleCoffeeFactory {
     public static Coffee createCoffee(String type) {

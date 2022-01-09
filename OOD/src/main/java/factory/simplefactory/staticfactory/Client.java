@@ -2,8 +2,8 @@ package factory.simplefactory.staticfactory;
 
 /**
  * @author ylyu
- * @date 1/2/22 9:10 AM
  * @version 1.0
+ * @date 1/2/22 9:10 AM
  */
 public class Client {
     public static void main(String[] args) {

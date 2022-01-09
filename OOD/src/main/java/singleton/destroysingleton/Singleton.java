@@ -4,14 +4,15 @@ import java.io.Serializable;
 
 /**
  * @author ylyu
- * @date 1/1/22
  * @version 1.0
+ * @date 1/1/22
  * @description 静态内部类单例模式
  */
 public class Singleton implements Serializable {
 
     // make constructor be private
-    private Singleton() {}
+    private Singleton() {
+    }
 
     // define a inner static class
     private static class SingletonHolder {

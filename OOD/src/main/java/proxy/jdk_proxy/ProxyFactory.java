@@ -24,9 +24,9 @@ public class ProxyFactory {
         return (SellTickets) Proxy.newProxyInstance(
                 station.getClass().getClassLoader(),
                 station.getClass().getInterfaces(),
-                (proxy, method, args) ->  {
-                        System.out.println("代理点收取一些服务费用(JDK动态代理方式)");
-                        return method.invoke(station, args);
+                (proxy, method, args) -> {
+                    System.out.println("代理点收取一些服务费用(JDK动态代理方式)");
+                    return method.invoke(station, args);
 
                 }
 //                new InvocationHandler() {

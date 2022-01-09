@@ -5,12 +5,13 @@ import java.lang.reflect.InvocationTargetException;
 
 /**
  * @author ylyu
- * @date 1/1/22 10:58 PM
  * @version 1.0
+ * @date 1/1/22 10:58 PM
  */
 public class Client {
 
-    public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException,
+            InstantiationException, IllegalAccessException {
         // 1, 获取Singleton类的字节码对象
         Class<Singleton> clazz = Singleton.class;
         //2, 获取Singleton类的私有无参构造方法对象

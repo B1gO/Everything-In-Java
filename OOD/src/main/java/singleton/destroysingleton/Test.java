@@ -4,10 +4,10 @@ import java.io.*;
 
 /**
  * @author ylyu
- * @date 1/1/22 10:36 PM
  * @version 1.0
- *
+ * <p>
  * 破坏单例模式：序列化反序列化
+ * @date 1/1/22 10:36 PM
  */
 public class Test {
 

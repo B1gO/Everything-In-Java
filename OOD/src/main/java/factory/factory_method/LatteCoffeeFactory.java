@@ -5,7 +5,7 @@ package factory.factory_method;
  * @version 1.0
  * @date 1/2/22 10:26 AM
  */
-public class LatteCoffeeFactory implements CoffeeFactory{
+public class LatteCoffeeFactory implements CoffeeFactory {
     @Override
     public Coffee createCoffee() {
         return new LatteCoffee();

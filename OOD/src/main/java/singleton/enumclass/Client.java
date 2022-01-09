@@ -2,8 +2,8 @@ package singleton.enumclass;
 
 /**
  * @author ylyu
- * @date 1/1/22 8:08 PM
  * @version 1.0
+ * @date 1/1/22 8:08 PM
  */
 public class Client {
 

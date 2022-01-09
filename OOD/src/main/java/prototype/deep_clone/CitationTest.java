@@ -17,13 +17,13 @@ public class CitationTest {
         citation.setStu(stu);
 
         // 创建对象输出流
-        ObjectOutputStream oos =  new ObjectOutputStream(new FileOutputStream("/home/ylyu/Downloads/a.txt"));
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("/home/ylyu/Downloads/a.txt"));
         // 写对象
         oos.writeObject(citation);
         oos.close();
 
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("/home/ylyu/Downloads/a.txt"));
-        Citation citation1 = (Citation)ois.readObject();
+        Citation citation1 = (Citation) ois.readObject();
         ois.close();
 
         citation1.getStu().setName("Li Si");

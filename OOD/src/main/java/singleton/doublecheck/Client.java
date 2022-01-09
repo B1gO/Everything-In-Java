@@ -2,8 +2,8 @@ package singleton.doublecheck;
 
 /**
  * @author ylyu
- * @date 1/1/22 7:52 PM
  * @version 1.0
+ * @date 1/1/22 7:52 PM
  */
 public class Client {
 

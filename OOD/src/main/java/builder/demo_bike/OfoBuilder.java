@@ -5,7 +5,7 @@ package builder.demo_bike;
  * @version 1.0
  * @date 1/3/22 10:13 AM
  */
-public class OfoBuilder extends Builder{
+public class OfoBuilder extends Builder {
     @Override
     public void buildFrame() {
         bike.setFrame("IRON Frame");

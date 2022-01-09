@@ -2,8 +2,8 @@ package factory.simplefactory.coffee;
 
 /**
  * @author ylyu
- * @date 1/2/22 9:04 AM
  * @version 1.0
+ * @date 1/2/22 9:04 AM
  */
 public class AmericanCoffee extends Coffee {
     @Override

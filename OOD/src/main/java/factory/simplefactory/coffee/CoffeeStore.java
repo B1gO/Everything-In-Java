@@ -2,8 +2,8 @@ package factory.simplefactory.coffee;
 
 /**
  * @author ylyu
- * @date 1/2/22 9:06 AM
  * @version 1.0
+ * @date 1/2/22 9:06 AM
  */
 public class CoffeeStore {
     public Coffee orderCoffee(String type) {

@@ -2,8 +2,8 @@ package singleton.enumclass;
 
 /**
  * @author ylyu
- * @date 1/1/22 8:07 PM
  * @version 1.0
+ * @date 1/1/22 8:07 PM
  * @description enum, it is eager;
  */
 public enum Singleton {

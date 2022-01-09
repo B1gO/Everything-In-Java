@@ -6,7 +6,7 @@ package adapter.class_adapter;
  * @date 1/6/22 11:34 AM
  * @description 适配器类
  */
-public class SDAdapterTF extends TFCardImpl implements SDCard{
+public class SDAdapterTF extends TFCardImpl implements SDCard {
     @Override
     public String readSD() {
         System.out.println("adapter read tf card");

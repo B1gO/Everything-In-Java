@@ -2,8 +2,8 @@ package singleton.innerstaticclass;
 
 /**
  * @author ylyu
- * @date 1/1/22 8:01 PM
  * @version 1.0
+ * @date 1/1/22 8:01 PM
  */
 public class Client {
 
