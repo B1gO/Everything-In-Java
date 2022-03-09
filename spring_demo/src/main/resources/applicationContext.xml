@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns="http://www.springframework.org/schema/beans"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-http://www.springframework.org/schema/beans/spring-beans.xsd
-http://www.springframework.org/schema/context
-http://www.springframework.org/schema/context/springcontext.
-xsd">
-    <bean id="userDao" class="com.eij.dao.impl.UserDaoImpl"></bean>
+<beans>
+    <bean id="userDao" class="com.eij.dao.impl.UserDaoImpl">
+        <property name="username" value = "zhangsan"></property>
+        <property name="password" value = "123456"></property>
+    </bean>
     <bean id="userService" class="com.eij.service.impl.UserServiceImpl">
         <property name="UserDao" ref="userDao"></property>
     </bean>
