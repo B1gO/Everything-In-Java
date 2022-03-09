@@ -12,7 +12,9 @@ import java.util.Map;
  */
 public class SimpleBeanDefinitionRegistry implements BeanDefinitionRegistry {
 
-    // 定义一个容器，用来存储BeanDefinition对象
+    /**
+     * 定义一个容器，用来存储BeanDefinition对象
+     */
     private Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();
 
     @Override

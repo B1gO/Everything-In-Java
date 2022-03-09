@@ -40,12 +40,8 @@ public abstract class AbstractApplicationContext implements ApplicationContext {
         // 获取beanDefinition对象
         String[] beanDefinitionNames = registry.getBeanDefinitionNames();
         for (String name : beanDefinitionNames) {
-            BeanDefinition beanDefinition =
-                    registry.getBeanDefinition(name);
+            BeanDefinition beanDefinition = registry.getBeanDefinition(name);
             getBean(name);
         }
-
-        // bean的初始化
-
     }
 }

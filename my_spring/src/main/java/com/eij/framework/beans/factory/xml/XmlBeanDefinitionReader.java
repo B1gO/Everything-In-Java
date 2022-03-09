@@ -19,7 +19,9 @@ import java.util.List;
  * @description 针对xml配置文件进行解析的类
  */
 public class XmlBeanDefinitionReader implements BeanDefinitionReader {
-    // 声明注册表对象
+    /**
+     * 声明注册表对象
+     */
     private BeanDefinitionRegistry registry;
 
     public XmlBeanDefinitionReader() {
