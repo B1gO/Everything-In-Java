@@ -11,6 +11,9 @@
     <modules>
         <module>OOD</module>
         <module>Features_Java8</module>
+        <module>batch_processing</module>
+        <module>my_spring</module>
+        <module>spring_demo</module>
     </modules>
 
     <name>everything-in-java</name>
