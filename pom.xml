@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>OOD</module>
-        <module>Features_Java8</module>
+        <module>java_core</module>
         <module>batch_processing</module>
         <module>my_spring</module>
         <module>spring_demo</module>
@@ -74,7 +74,6 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
-                    <version>3.0.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>

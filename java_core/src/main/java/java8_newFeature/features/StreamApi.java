@@ -1,8 +1,8 @@
-package features;
+package java8_newFeature.features;
 
 import org.junit.Test;
-import pojos.Employee;
-import utils.EmployeeData;
+import java8_newFeature.pojos.Employee;
+import java8_newFeature.utils.EmployeeData;
 
 import java.util.*;
 import java.util.stream.Collectors;

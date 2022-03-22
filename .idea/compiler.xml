@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="batch_processing" />
         <module name="spring_demo" />
+        <module name="java_core" />
         <module name="OOD" />
-        <module name="Features_Java8" />
         <module name="my_spring" />
       </profile>
     </annotationProcessing>

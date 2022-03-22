@@ -1,4 +1,4 @@
-package pojos;
+package java8_newFeature.pojos;
 
 /**
  * @author Yanan Lyu

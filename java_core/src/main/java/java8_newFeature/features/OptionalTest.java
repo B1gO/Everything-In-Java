@@ -1,7 +1,7 @@
-package features;
+package java8_newFeature.features;
 
 import org.junit.Test;
-import pojos.Employee;
+import java8_newFeature.pojos.Employee;
 
 import java.util.Optional;
 

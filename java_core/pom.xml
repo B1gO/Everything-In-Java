@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.eij</groupId>
-    <artifactId>Features_Java8</artifactId>
+    <artifactId>java_core</artifactId>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
