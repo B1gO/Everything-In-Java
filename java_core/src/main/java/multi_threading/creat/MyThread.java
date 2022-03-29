@@ -4,7 +4,7 @@ package multi_threading.creat;
  * @author Yanan Lyu
  * @date 3/21/22 9:02 AM
  */
-public class MyThread extends Thread{
+public class MyThread extends Thread {
     /**
      * If this thread was constructed using a separate
      * {@code Runnable} run object, then that
@@ -14,7 +14,6 @@ public class MyThread extends Thread{
      * Subclasses of {@code Thread} should override this method.
      *
      * @see #start()
-     * @see #stop()
      */
     @Override
     public void run() {
