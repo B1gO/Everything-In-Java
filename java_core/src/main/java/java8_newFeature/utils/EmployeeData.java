@@ -14,13 +14,13 @@ public class EmployeeData {
     public static List<Employee> getEmployees() {
         List<Employee> list = new ArrayList<>();
 
-        list.add(new Employee(1001, "马云"));
-        list.add(new Employee(1002, "马化腾"));
-        list.add(new Employee(1004, "雷军"));
-        list.add(new Employee(1005, "比尔盖茨"));
-        list.add(new Employee(1003, "李彦宏"));
-        list.add(new Employee(1007, "任正非"));
-        list.add(new Employee(1006, "扎克伯格"));
+        list.add(new Employee(1001, "Yun Ma", 50, 30000.00));
+        list.add(new Employee(1002, "Huateng Ma", 49, 22222.22));
+        list.add(new Employee(1004, "Jun Lei", 43, 12234.12));
+        list.add(new Employee(1005, "Bill Gates", 65, 9999999));
+        list.add(new Employee(1003, "Yanhong Li", 30, 123123));
+        list.add(new Employee(1007, "Zhengfei Ren", 78, 66666));
+        list.add(new Employee(1006, "Mark Elliot Zuckerberg", 29, 8888888));
 
         return list;
     }

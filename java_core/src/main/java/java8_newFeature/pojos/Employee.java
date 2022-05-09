@@ -7,13 +7,17 @@ package java8_newFeature.pojos;
 public class Employee {
     private int id;
     private String name;
-
-    public Employee(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
+    private int age;
+    private double salary;
 
     public Employee() {
+    }
+
+    public Employee(int id, String name, int age, double salary) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
     }
 
     public int getId() {
@@ -32,11 +36,29 @@ public class Employee {
         this.name = name;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
                 '}';
     }
 }
