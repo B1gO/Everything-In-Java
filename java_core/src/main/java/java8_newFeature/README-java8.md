@@ -1,5 +1,8 @@
 # Java 8 New Features
 
+## General Introduction
+[Java 8 new features](https://www.cnblogs.com/54chensongxia/p/13858850.html)
+
 ## Stream API
 
 ### Feature:
@@ -203,7 +206,7 @@ Optional<String> firstElement = elements.stream().findFirst();
           .get();
         * return the firstMatchedName and stop performing on the rest of elements
 
-## Parallel Streams
+### Parallel Streams
 
 n any of the above-listed stream examples, anytime we want to do a particular job using multiple threads in parallel
 cores, all we have to call parallelStream() method instead of stream() method.
