@@ -12,6 +12,7 @@ import java.util.stream.Stream;
  * @author bigO
  * @date 5/9/22 7:19 AM
  * https://blog.devgenius.io/15-practical-exercises-help-you-master-java-stream-api-3f9c86b1cf82
+ * https://github.com/gavinklfong/stream-api-exercises
  */
 public class StreamExercise {
     @Test
