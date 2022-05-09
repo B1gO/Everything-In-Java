@@ -14,6 +14,7 @@
         <module>batch_processing</module>
         <module>my_spring</module>
         <module>spring_demo</module>
+        <module>stream-api-exercises</module>
     </modules>
 
     <name>everything-in-java</name>
