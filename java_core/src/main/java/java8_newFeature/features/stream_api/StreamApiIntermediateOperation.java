@@ -30,7 +30,7 @@ public class StreamApiIntermediateOperation {
      * 4. distinct() - 筛选，通过元素的hashcode(), equals()去除重复元素
      * <p>
      * 二，映射
-     * 1, map(function f)
+     * 1, map(function f) element -> black box(f) -> new element
      * 2, flatMap(function f)
      * 三， 排序
      * 1, sorted
@@ -106,7 +106,7 @@ public class StreamApiIntermediateOperation {
     }
 
     @Test
-    public void test3() {
+    public void testIntermediateOperationChain() {
         ArrayList<Integer> list1 = new ArrayList<>();
         list1.add(1);
         list1.add(2);
@@ -117,8 +117,10 @@ public class StreamApiIntermediateOperation {
         list2.add(5);
         list2.add(6);
 
-//        list1.add(list2);
-        list1.addAll(list2);
+        list1.addAll(list2.stream()
+                .filter(e -> e % 2 == 0)
+                .map(e -> e * 10)
+                .collect(Collectors.toList()));
         System.out.println(list1);
     }
 
@@ -127,13 +129,18 @@ public class StreamApiIntermediateOperation {
      * https://www.youtube.com/watch?v=DlHnbbS3bBY&list=PLmOn9nNkQxJH0qBIrtV6otI0Ep4o2q67A&index=679
      */
     @Test
-    public void testSort() {
-        List<Integer> list = Arrays.asList(12, 43, 65, 34, 72, 87);
+    public void testSorted() {
+        List<Integer> list = Arrays.asList(87, 2, 65, 34, 72, 12);
         list.stream().sorted().forEach(System.out::println);
 
-        System.out.println("***********");
+        System.out.println("\n***********\n");
 
         List<Employee> employees = EmployeeData.getEmployees();
         employees.stream().sorted(Comparator.comparingInt(Employee::getAge)).forEach(System.out::println);
+
+        System.out.println("\n********* equals ***************\n");
+        Stream<Employee> stream = employees.stream();
+        Stream<Employee> sorted = stream.sorted(Comparator.comparingInt(Employee::getAge));
+        sorted.forEach(System.out::println);
     }
 }

@@ -63,7 +63,7 @@ public class StreamApiEndOperation {
         System.out.println("**************************");
 
 //        3， noneMatch(Predicate p) - 检查是否没有匹配的元素
-        boolean noneMatch = employees.stream().noneMatch(e -> e.getName().startsWith("雷"));
+        boolean noneMatch = employees.stream().noneMatch(e -> e.getName().startsWith("Yun"));
         System.out.println(noneMatch);
     }
 
@@ -91,7 +91,7 @@ public class StreamApiEndOperation {
     public void testCountMaxMin() {
 //        6, count - 返回流中元素的个数
         long count = employees.stream().filter(e -> e.getAge() > 40).count();
-        System.out.println("num of employees(age > 60): " + count);
+        System.out.println("num of employees(age > 40): " + count);
 
 //        7, max(Comparator c) - 返回流中的最大值
         Stream<Integer> stream = employees.stream().map(Employee::getAge);
@@ -99,8 +99,19 @@ public class StreamApiEndOperation {
         System.out.println("max age is: " + max);
 
 //        8, min(Comparator c) - 返回流中的最小值
-        Optional<Employee> min = employees.stream().min(Comparator.comparingInt(Employee::getId));
+        Optional<Employee> min = employees.stream()
+                .min(Comparator.comparingInt(Employee::getId));
         System.out.println("min age is : " + min);
+
+        employees.stream()
+                .filter(e -> e.getAge() > 40)
+                .map(e -> e.getName() + " ： OLD PPL")
+                .forEach(System.out::println);
+
+        List<String> collect = employees.stream()
+                .filter(e -> e.getAge() > 40).map(e -> e.getName() + " ： OLD PPL")
+                .collect(Collectors.toList());
+        collect.forEach(System.out::println);
     }
 
     /**
@@ -141,5 +152,30 @@ public class StreamApiEndOperation {
 
         Set<Employee> collect2 = employees.stream().filter(e -> e.getId() > 1002).collect(Collectors.toSet());
         collect2.forEach(System.out::println);
+    }
+
+    /**
+     * map是必须要有return的
+     *
+     */
+    @Test
+    public void testChain() {
+        List<Double> collect = employees.stream()
+                .filter(e -> e.getAge() < 40)
+                .map(e -> e.getSalary() * 0.8)
+                .collect(Collectors.toList());
+        collect.forEach(System.out::println);
+
+        System.out.println("********************");
+
+        Optional<Integer> reduce = employees.stream()
+                .filter(e -> e.getAge() < 40)
+                .map(e -> e.getSalary() * 0.8)
+                .map(e -> {
+                    System.out.println(e);
+                    return e.intValue();
+                })
+                .reduce(Integer::sum);
+        System.out.println(reduce.get());
     }
 }

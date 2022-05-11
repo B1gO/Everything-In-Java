@@ -62,7 +62,7 @@ public class StreamApiCreationTest {
         Employee e2 = new Employee(1002, "Jerry", 18, 5000);
         Employee[] arr1 = new Employee[]{e1, e2};
         Stream<Employee> stream1 = Arrays.stream(arr1);
-        System.out.println("Parallel Stream object:     " + stream1);
+        System.out.println("Stream object:     " + stream1);
     }
 
     @Test
@@ -101,6 +101,7 @@ public class StreamApiCreationTest {
         Stream<String> streamBuilder =
                 Stream.<String>builder().add("a").add("b").add("c").build();
         System.out.println("Stream Object:  " + streamBuilder);
+        streamBuilder.forEach(System.out::println);
     }
 
     @Test

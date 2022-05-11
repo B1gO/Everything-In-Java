@@ -23,6 +23,7 @@ public class LambdaLearn {
 
     @Test
     public void overrideFoo() {
+//        Foo fooByIC = new Foo();
         Foo fooByIC = new Foo() {
             @Override
             public String method(String string) {
@@ -77,6 +78,7 @@ public class LambdaLearn {
     public void testFinal2() {
         String localVariable = "Local";
         localVariable = "LOCAL";
+
         Foo foo = parameter -> {
 //            return parameter + " " + localVariable;
             return parameter;
