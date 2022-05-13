@@ -1,8 +1,10 @@
-package multi_threading.status;
+package multi_threading.syncronized;
 
 /**
  * @author Yanan Lyu
  * @date 3/21/22 10:19 AM
+ * @description 用object当锁，
+ * 不同thread用不同锁去访问同一变量，会失效。
  */
 public class SynchronizedThreads {
     public static void main(String[] args) throws InterruptedException {
