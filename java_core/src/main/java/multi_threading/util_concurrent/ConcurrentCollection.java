@@ -15,6 +15,10 @@ import java.util.concurrent.ConcurrentHashMap;
  * Set	        HashSet/TreeSet	    CopyOnWriteArraySet
  * Queue	    ArrayDeque/LinkedList	ArrayBlockingQueue/LinkedBlockingQueue
  * Deque	    ArrayDeque/LinkedList	LinkedBlockingDeque
+ *
+ * 使用java.util.concurrent包提供的线程安全的并发集合可以大大简化多线程编程：
+ * 多线程同时读写并发集合是安全的；
+ * 尽量使用Java标准库提供的并发集合，避免自己编写同步代码。
  */
 public class ConcurrentCollection {
     public static void main(String[] args) {

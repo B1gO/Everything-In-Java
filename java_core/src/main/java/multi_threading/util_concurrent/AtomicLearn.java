@@ -4,8 +4,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * @author Yanan Lyu
+ * @author b1go
  * @date 3/29/22 9:34 AM
+ * @description 自己利用CAS实现
  */
 public class AtomicLearn {
     public int incrementAndGet(AtomicInteger var) {
@@ -18,6 +19,9 @@ public class AtomicLearn {
     }
 }
 
+/**
+ * @description 直接使用现有的
+ */
 class IdGenerator {
     AtomicLong var = new AtomicLong(0);
 

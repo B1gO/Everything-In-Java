@@ -10,8 +10,19 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @author Yanan Lyu
+ * @author b1go
  * @date 3/22/22 10:03 PM
+ * @description condition必须从lock中来，这样signalAll()才能通知到对应的等待中的线程
+ * lockA 的condition能唤醒使用了lockA的等待中的线程。不能唤醒lockB的。
+ *
+ * await()会释放当前锁，进入等待状态；
+ *
+ * signal()会唤醒某个等待线程；
+ *
+ * signalAll()会唤醒所有等待线程；
+ *
+ * Condition可以替代wait和notify；
+ * Condition对象必须从Lock对象获取。
  */
 public class ConditionLearn {
     public static void main(String[] args) throws InterruptedException {

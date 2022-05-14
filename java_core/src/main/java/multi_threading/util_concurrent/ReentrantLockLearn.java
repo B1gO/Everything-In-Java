@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
- * @author Yanan Lyu
+ * @author b1go
  * @date 3/22/22 1:44 PM
  */
 public class ReentrantLockLearn {

@@ -11,11 +11,12 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 /**
  * @author Yanan Lyu
  * @date 3/24/22 9:58 AM
- * @description 只允许一个线程写入（其他线程既不能写入也不能读取）；
+ * @description 悲观锁。只允许一个线程写入（其他线程既不能写入也不能读取）；
  * 没有写入时，多个线程允许同时读（提高性能）。
  * 使用ReadWriteLock时，适用条件是同一个数据，有大量线程读取，但仅有少数线程修改。
  * 例如，一个论坛的帖子，回复可以看做写入操作，它是不频繁的，但是，浏览可以看做读取操作，是非常频繁的，这种情况就可以使用ReadWriteLock。
  * https://www.liaoxuefeng.com/wiki/1252599548343744/1306581002092578
+ *
  * 使用ReadWriteLock可以提高读取效率：
  * ReadWriteLock只允许一个线程写入；
  * ReadWriteLock允许多个线程在没有写入时同时读取；

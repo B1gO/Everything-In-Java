@@ -4,8 +4,10 @@ import java.util.Map;
 import java.util.concurrent.locks.StampedLock;
 
 /**
- * @author Yanan Lyu
+ * @author bigo
  * @date 3/24/22 10:52 AM
+ * @description 乐观锁。读的过程中允许写。
+ *
  */
 public class StampedLockLearn {
     public static void main(String[] args) {
