@@ -1,7 +1,15 @@
 # Thread
 
+## Interview questions
+* What is the difference between start() and run()?
+* How to create a new thread?
+* What kind of locks do you know? what the details of them?
+* What is thread pool? what is the advantage and how to create a thread pool?
+* What is callable? what is the diff between callable and runnable?
+* What is future and competableFuture? give me the example in your experience.
+
 ## Creation
-* implements Runnable
+* implements Runnable/Callable
 * extends Thread
 
 ### Steps to create and run a thread

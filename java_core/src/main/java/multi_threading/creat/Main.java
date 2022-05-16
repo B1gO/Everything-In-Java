@@ -3,6 +3,7 @@ package multi_threading.creat;
 /**
  * @author b1go
  * @date 3/21/22 9:02 AM
+ * question: what's the difference between start() and run()
  */
 public class Main {
     public static void main(String[] args) {
