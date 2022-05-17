@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="batch_processing" />
-        <module name="spring_demo" />
-        <module name="java_core" />
         <module name="OOD" />
         <module name="streamapi" />
+        <module name="spring_demo" />
+        <module name="java_core" />
         <module name="my_spring" />
+        <module name="algorithm" />
       </profile>
     </annotationProcessing>
   </component>

@@ -15,6 +15,7 @@
         <module>my_spring</module>
         <module>spring_demo</module>
         <module>stream-api-exercises</module>
+        <module>algorithm</module>
     </modules>
 
     <name>everything-in-java</name>
