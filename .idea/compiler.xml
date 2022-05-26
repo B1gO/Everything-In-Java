@@ -8,8 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="batch_processing" />
+        <module name="unit-testing" />
         <module name="OOD" />
         <module name="streamapi" />
+        <module name="composite" />
         <module name="spring_demo" />
         <module name="java_core" />
         <module name="my_spring" />
@@ -19,10 +21,15 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="OOD" options="-parameters" />
+      <module name="algorithm" options="-parameters" />
       <module name="batch_processing" options="-parameters" />
+      <module name="composite" options="-parameters" />
+      <module name="java_core" options="-parameters" />
       <module name="my_spring" options="-parameters" />
       <module name="spring_demo" options="" />
       <module name="streamapi" options="-parameters" />
+      <module name="unit-testing" options="-parameters" />
     </option>
   </component>
 </project>

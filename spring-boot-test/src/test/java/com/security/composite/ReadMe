@@ -1,0 +1,20 @@
+Junit:
+    UserDetailsServiceImplTest
+
+Mockito-Database:
+    UserDetailsServiceImplMockTest
+
+Mockito-Controller:
+    MainControllerMockTest
+
+Spring MockMVC-controller:
+    MainControllerMockTest:
+
+Mockito-RestTemplate:
+    UserDetailsServiceImplMockTest
+
+Selenium:
+    SeleniumTest
+
+Cucumber:
+    CucumberTest

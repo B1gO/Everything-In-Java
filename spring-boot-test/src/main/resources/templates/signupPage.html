@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+	  	<title>Social Media Login Example</title>
+	  	<meta charset="utf-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	  	<link rel="stylesheet" href="custom.css">
+	</head>
+	<body>
+		<div class="jumbotron jumbotron-fluid">
+	  		<div class="container">
+	    		<h1>Social Media Login</h1>      
+	  		</div>
+		</div>
+		<div class="container">
+  					<div class="row">
+  					<div class="col-sm-3">
+  					</div>
+  						<div class="col-sm-6">
+  						
+  						<h2>Sign up below</h2>
+							<form th:object="${user}"
+								  th:action="@{/register}"
+								  th:method="POST">
+								<div class="form-group">
+									<label for="email">Email:</label>
+									<input type="text" class="form-control" id="email" th:field="${user.email}" required><BR/>
+								</div>
+
+								<div class="form-group">
+									<label for="pwd">Password:</label>
+									<input type="password" class="form-control" id="pwd" th:field="${user.password}" required><BR/>
+								</div>
+
+								<div class="form-group">
+								<span>
+                                    <select th:field="${user.role}" class="custom-select" required>
+										<option th:value="ADMIN" th:text="ADMIN"></option>
+										<option th:value="USER" th:text="USER"></option>
+                                    </select>
+                                 </span>
+								</div>
+
+								<div class="d-flex justify-content-between mb-3">
+									<div class="p-2"><a href="/"><button type="button" class="btn btn-secondary">Back</button></a></div>
+									<div class="p-2"></div>
+									<div class="p-2"><button type="submit" class="btn btn-info">Register Account</button></div>
+								</div>
+							</form>
+  						</div>
+
+					</div>
+					  <div class="col-sm-3">
+					</div>
+  				</div>
+		</div>
+	</body>
+</html>
