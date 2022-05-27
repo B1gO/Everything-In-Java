@@ -21,7 +21,6 @@
         <module>spring_demo</module>
         <module>stream-api-exercises</module>
         <module>algorithm</module>
-        <module>spring-boot-test</module>
         <module>unit-testing</module>
     </modules>
 

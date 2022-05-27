@@ -11,13 +11,15 @@
         <module name="unit-testing" />
         <module name="OOD" />
         <module name="streamapi" />
-        <module name="composite" />
         <module name="spring_demo" />
         <module name="java_core" />
         <module name="my_spring" />
         <module name="algorithm" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="composite" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
