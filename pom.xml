@@ -19,18 +19,15 @@
         <module>batch_processing</module>
         <module>my_spring</module>
         <module>spring_demo</module>
-        <module>stream-api-exercises</module>
         <module>algorithm</module>
-        <module>unit-testing</module>
     </modules>
 
     <name>everything-in-java</name>
-    <url>www.example.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>

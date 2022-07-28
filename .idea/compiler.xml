@@ -11,6 +11,7 @@
         <module name="unit-testing" />
         <module name="OOD" />
         <module name="streamapi" />
+        <module name="Features_Java8" />
         <module name="spring_demo" />
         <module name="java_core" />
         <module name="my_spring" />
@@ -23,7 +24,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="OOD" options="-parameters" />
+      <module name="OOD" options="" />
       <module name="algorithm" options="-parameters" />
       <module name="batch_processing" options="-parameters" />
       <module name="composite" options="-parameters" />
